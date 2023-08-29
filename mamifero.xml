@@ -1,0 +1,25 @@
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:cd="http://www.recshop.fake/cd#">
+<!-- Clases -->
+<rdfs:Class rdf:ID="Mamifero">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdfs:Class>
+<rdfs:Class rdf:ID="Persona">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="Mamifero"/>
+	<cd:tienePiernas rdf:resource="2"/>
+</rdfs:Class>
+<!-- Instancias -->
+<rdfs:Class rdf:ID="Mary">
+	<rdfs:subClassOf rdf:resource="Persona"/>
+	<cd:genero rdf:resource="Femenino"/>
+	<cd:hermano rdf:resource="John"/>
+</rdfs:Class>
+<rdfs:Class rdf:ID="John">
+	<rdfs:subClassOf rdf:resource="Persona"/>
+	<cd:genero rdf:resource="Masculino"/>
+	<cd:hermano rdf:resource="Mary"/>
+</rdfs:Class>
+</rdf:RDF>
