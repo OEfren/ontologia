@@ -1,1 +1,19 @@
 
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:dc= "http://purl.org/dc/elements/1.1/">
+<!-- Clases -->
+<rdfs:Class rdf:ID="animal">
+</rdfs:Class>
+<rdfs:Class rdf:ID="Human">
+</rdfs:Class>
+<rdfs:Class rdf:ID="Mammal">	
+	<rdfs:subClassOf rdf:resource="animal"/>
+	<rdf:eyes>2</rdf:eyes>
+	<rdf:legs>4</rdf:legs>
+</rdfs:Class>
+<rdfs:Class rdf:ID="dog">	
+	<rdfs:subClassOf rdf:resource="Mammal"/>
+</rdfs:Class>
+</rdf:RDF>
