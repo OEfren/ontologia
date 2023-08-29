@@ -1,0 +1,18 @@
+ <rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:cd="http://www.recshop.fake/cd#">
+ <!-- Clases -->
+ <rdfs:Class rdf:ID="Libro">
+ 	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+ </rdfs:Class>
+ <!-- Instancias -->
+ <rdfs:Class rdf:ID="Bajo_la_misma_estrella">
+ 	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+ 	<rdfs:subClassOf rdf:resource="#Libro"/>
+ 	<cd:escritoPor rdf:resource="#John Green"/>
+ 	<cd:editadoPor rdf:resource="#John Green"/>
+ 	<cd:fechaLanzamiento rdf:resource="#2014"/>
+ 	<cd:copiasVendidas rdf:resource="1mil"/>
+ </rdfs:Class>
+ </rdf:RDF>
