@@ -1,0 +1,45 @@
+<!DOCTYPE rdf:RDF [
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+]>
+<rdf:RDF xmlns="http://www.semanIcweb.org/geography#"
+xml:base="http://www.semanIcweb.org/geography"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+<!-- Clases -->
+<rdf:Description rdf:about="#Pais">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+<rdf:Description rdf:about="#Estado">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+<rdf:Description rdf:about="#Ciudad">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+<!-- Propiedades -->
+<rdf:Description rdf:about="#tieneCapital">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="#pertenece">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="#colindaCon">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+<rdf:Description rdf:about="#seDivide">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+<!-- Instancias -->
+<rdf:Description rdf:about="#Mexico">
+<rdf:type rdf:resource="#Pais"/>
+<isLocatedIn rdf:resource="#USA"/>
+</rdf:Description>
+<rdf:Description rdf:about="#Mexico">
+<rdf:type rdf:resource="#Pais"/>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<tieneCapital rdf:resource="#CiudadDeMexico"/>
+<colindaCon rdf:resource="#USA"/>
+<seDivide rdf:resource="#Estado"/>
+</rdf:Description>
+</rdf:RDF>
