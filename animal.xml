@@ -1,0 +1,29 @@
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:dc= "http://purl.org/dc/elements/1.1/">
+<!-- Clases -->
+<rdfs:Class rdf:ID="animal">
+	<dc:isA>vegetarian</dc:isA>
+	<dc:isA>cow</dc:isA>
+	<dc:dosentEat>animal</dc:dosentEat>
+</rdfs:Class>
+<rdfs:Class rdf:ID="person">
+	<dc:isA>Cat_liker</dc:isA>
+</rdfs:Class>
+<rdfs:Class rdf:ID="man">
+	<rdfs:subClassOf rdf:resource="person"/>
+</rdfs:Class>
+<rdfs:Class rdf:ID="pet">
+	<rdfs:subClassOf rdf:resource="animal"/>
+</rdfs:Class>
+<rdfs:Class rdf:ID="cat">
+	<rdfs:subClassOf rdf:resource="pet"/>
+</rdfs:Class>
+<!-- Instancias -->
+<rdfs:Class rdf:ID="Fred">
+	<rdfs:subClassOf rdf:resource="man"/>
+	<dc:isA>adult</dc:isA>
+	<dc:isA>male</dc:isA>
+</rdfs:Class>
+</rdf:RDF>
